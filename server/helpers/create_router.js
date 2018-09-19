@@ -47,13 +47,10 @@ const createRouter = function (collection) {
 
   router.put('/:id', (req, res) => {
     const id = req.params.id;
-    const updatedData = req.body;
-    // console.log(updatedData);
-    // console.log(id);
     collection
       .updateOne(
         { _id: ObjectID(id) },
-        { $set: updatedData }
+        { $set: {complete: "Yes"} }
       )
       .then(() => collection.find().toArray())
       .then((docs) => res.json(docs))
