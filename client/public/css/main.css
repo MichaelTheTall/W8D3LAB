@@ -11,7 +11,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 500px;
+  height: 600px;
 }
 
 div#listbox {
@@ -28,15 +28,11 @@ div#listbox {
 .complete-btn {
   width: 40px;
   height: 40px;
-  background: url(../images/tick.jpg);
+  background: url(../images/tick.png);
   background-size: 40px;
 }
 
-button.delete-btn {
+button {
   border: none;
-  padding: 0;
-}
-button.complete-btn {
-  border: none;
-  padding: 0;
+  padding: 0:
 }
