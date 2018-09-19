@@ -44,4 +44,16 @@ ItemView.prototype.createDeleteButton = function (itemId) {
   return button;
 };
 
+ItemView.prototype.createCompleteButton = function (itemId) {
+  const button = document.createElement('button');
+  button.classList.add('completeButton');
+  button.value = itemId;
+
+  button.addEventListener('click', (evt) => {
+    PubSub.publish('ItemView:item-complete-clicked', evt.target.value);
+  });
+
+  return button;
+};
+
 module.exports = ItemView;
