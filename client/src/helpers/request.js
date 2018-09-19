@@ -25,7 +25,7 @@ Request.prototype.delete = function (id) {
 
 Request.prototype.put = function (id) {
   return fetch(`${this.url}/${id}`, {
-    method: 'UPDATE'
+    method: 'PUT'
   })
     .then((response) => response.json());
 };
