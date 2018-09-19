@@ -1,0 +1,22 @@
+{
+  "name": "bucket_list_app",
+  "version": "1.0.0",
+  "description": "This app allows you to make a bucket list before you kick it!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:dev": "nodemon server/server.js",
+    "build": "webpack -w"
+  },
+
+  "author": "Michael Newman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.6",
+    "nodemon": "^1.18.4",
+    "webpack": "^4.19.1"
+  }
+}
