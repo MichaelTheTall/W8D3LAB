@@ -11,12 +11,13 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
+  height: 500px;
 }
-/*
+
 div#listbox {
   overflow: scroll;
-  height: 90%;
-} */
+  height: 100%;
+}
 
 .delete-btn {
   width: 40px;
