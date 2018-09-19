@@ -19,13 +19,23 @@ div#listbox {
 } */
 
 .delete-btn {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background: url(../images/delete.png);
-  background-size: 20px;
+  background-size: 40px;
+}
+.complete-btn {
+  width: 40px;
+  height: 40px;
+  background: url(../images/tick.jpg);
+  background-size: 40px;
 }
 
 button.delete-btn {
+  border: none;
+  padding: 0;
+}
+button.complete-btn {
   border: none;
   padding: 0;
 }

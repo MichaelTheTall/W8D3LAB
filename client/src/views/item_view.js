@@ -14,6 +14,12 @@ ItemView.prototype.render = function (item) {
   const description = this.createDetail('Description', item.description);
   itemContainer.appendChild(description);
 
+  const complete = this.createDetail('Complete', item.complete);
+  itemContainer.appendChild(complete);
+
+  const completeButton = this.createCompleteButton(item._id);
+  itemContainer.appendChild(completeButton);
+
   const deleteButton = this.createDeleteButton(item._id);
   itemContainer.appendChild(deleteButton);
 
@@ -46,7 +52,7 @@ ItemView.prototype.createDeleteButton = function (itemId) {
 
 ItemView.prototype.createCompleteButton = function (itemId) {
   const button = document.createElement('button');
-  button.classList.add('completeButton');
+  button.classList.add('complete-btn');
   button.value = itemId;
 
   button.addEventListener('click', (evt) => {
