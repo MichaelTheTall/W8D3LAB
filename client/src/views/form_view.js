@@ -14,7 +14,8 @@ FormView.prototype.handleSubmit = function (evt) {
   evt.preventDefault();
   const newItem = {
     goal: evt.target.goal.value,
-    description: evt.target.description.value
+    description: evt.target.description.value,
+    complete: "No"
   };
   PubSub.publish('ItemView:item-submitted', newItem);
   this.form.reset();
