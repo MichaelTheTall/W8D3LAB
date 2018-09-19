@@ -9,7 +9,6 @@
     "server:dev": "nodemon server/server.js",
     "build": "webpack -w"
   },
-
   "author": "Michael Newman",
   "license": "ISC",
   "dependencies": {
@@ -18,5 +17,8 @@
     "mongodb": "^3.1.6",
     "nodemon": "^1.18.4",
     "webpack": "^4.19.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.0"
   }
 }
